@@ -1,0 +1,67 @@
+/* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.stopwatch {
+    text-align: center;
+    background: #00b7ff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 10rem;
+}
+
+h1 {
+    font-size: 48px;
+    margin: 20px 0;
+}
+
+.controls button {
+    width: 89px;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+
+}
+#laps {
+    max-height: 150px;
+    overflow-y: auto;
+    margin-top: 10px;
+    padding-right: 5px;
+    scrollbar-width: thin;            /* For Firefox */
+    scrollbar-color: #ffffff #007acc; /* Thumb and track colors */
+}
+
+/* WebKit-based browsers (Chrome, Edge, Safari) */
+#laps::-webkit-scrollbar {
+    width: 8px;
+}
+
+#laps::-webkit-scrollbar-track {
+    background: #007acc;
+    border-radius: 10px;
+}
+
+#laps::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 2px solid #007acc;
+}
+
+#laps::-webkit-scrollbar-thumb:hover {
+    background-color: #ccc;
+}
